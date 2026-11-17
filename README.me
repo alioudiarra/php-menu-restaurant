@@ -1,0 +1,52 @@
+# 🍽️ PHP – Menu du jour
+
+Petit exercice PHP qui affiche le **menu d'un restaurant** à partir d'un tableau multidimensionnel : les catégories (entrées, plats, desserts) contiennent chacune une liste de plats.
+
+## 🎯 Objectifs de l'exercice
+
+- Créer un tableau associatif dont les valeurs sont elles-mêmes des tableaux
+- Parcourir ce tableau avec deux boucles `foreach` imbriquées
+- Générer du HTML dynamiquement avec PHP (titres et listes)
+- Sécuriser l'affichage avec `htmlspecialchars()`
+
+## 📦 Les données
+
+| Catégorie | Plats                  |
+|-----------|------------------------|
+| Entrées   | Pain, Légumes, Toast   |
+| Plats     | Agneau, Kebab, Pizza   |
+| Desserts  | Tiramisu, Glace        |
+
+## 🖥️ Résultat
+
+La page affiche un titre **« Menu du jour »**, puis pour chaque catégorie un sous-titre suivi de la liste de ses plats.
+
+## 🛠️ Notions utilisées
+
+- `array()` : tableaux associatifs et multidimensionnels
+- `foreach` imbriqués (catégories, puis plats)
+- `ucfirst()` : première lettre en majuscule
+- `htmlspecialchars()` : protection de l'affichage
+- `echo` pour générer du HTML (`<h1>`, `<h2>`, `<ul>`, `<li>`)
+
+## 🚀 Lancer le projet
+
+1. Installe un serveur local (par exemple **MAMP**, **XAMPP** ou **WAMP**).
+2. Clone le repo dans le dossier du serveur (`htdocs`) :
+   ```bash
+   git clone https://github.com/alioudiarra/php-menu-restaurant.git
+   ```
+3. Démarre le serveur.
+4. Ouvre dans ton navigateur : `http://localhost/php-menu-restaurant/index.php`
+
+> Remplace `index.php` par le vrai nom de ton fichier si besoin.
+
+## 📚 Ce que j'ai appris
+
+- Parcourir un tableau dans un tableau
+- Transformer des données PHP en page HTML
+- Penser à échapper l'affichage avec `htmlspecialchars()`
+
+## 👤 Auteur
+
+**Aliou** — étudiant, passionné de football et de développement web.
